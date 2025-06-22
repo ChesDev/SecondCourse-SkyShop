@@ -67,4 +67,8 @@ public class StorageService {
         ).collect(Collectors.toUnmodifiableList());
     }
 
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(productStorage.get(id));
+    }
+
 }
