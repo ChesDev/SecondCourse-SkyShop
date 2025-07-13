@@ -28,11 +28,6 @@ public class ShopController {
         this.basketService = basketService;
     }
 
-    @GetMapping
-    public String hello() {
-        return "Hello, world!";
-    }
-
     @GetMapping("/search")
     public List<SearchResult> search(@RequestParam String pattern) {
         System.out.println("Поисковый запрос: " + pattern);
@@ -53,12 +48,14 @@ public class ShopController {
 
     @GetMapping("/basket/{id}")
     public String addProduct(@PathVariable("id") UUID id) {
+        System.out.println("Запрос к /basket/" + id + " получен");
         basketService.addProductToBasket(id);
         return "Продукт успешно добавлен";
     }
 
     @GetMapping("/basket")
     public UserBasket getUserBasket() {
+        System.out.println("Запрос к /basket получен");
         return basketService.getUserBasket();
     }
 
