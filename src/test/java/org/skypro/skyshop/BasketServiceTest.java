@@ -8,12 +8,12 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.skyshop.model.basket.BasketItem;
 import org.skypro.skyshop.model.basket.ProductBasket;
 import org.skypro.skyshop.model.basket.UserBasket;
-import org.skypro.skyshop.model.exceptions.NoSuchProductException;
+import org.skypro.skyshop.exceptions.NoSuchProductException;
 import org.skypro.skyshop.model.product.DiscountedProduct;
 import org.skypro.skyshop.model.product.Product;
 import org.skypro.skyshop.model.product.SimpleProduct;
-import org.skypro.skyshop.model.service.BasketService;
-import org.skypro.skyshop.model.service.StorageService;
+import org.skypro.skyshop.service.BasketService;
+import org.skypro.skyshop.service.StorageService;
 
 import java.util.*;
 

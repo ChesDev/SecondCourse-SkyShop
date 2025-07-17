@@ -1,4 +1,4 @@
-package org.skypro.skyshop.model.service;
+package org.skypro.skyshop.service;
 
 import org.skypro.skyshop.model.article.Article;
 import org.skypro.skyshop.model.product.DiscountedProduct;

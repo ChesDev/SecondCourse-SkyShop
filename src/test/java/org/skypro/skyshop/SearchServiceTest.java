@@ -8,8 +8,8 @@ import org.skypro.skyshop.model.article.Article;
 import org.skypro.skyshop.model.product.Product;
 import org.skypro.skyshop.model.product.SimpleProduct;
 import org.skypro.skyshop.model.search.SearchResult;
-import org.skypro.skyshop.model.service.SearchService;
-import org.skypro.skyshop.model.service.StorageService;
+import org.skypro.skyshop.service.SearchService;
+import org.skypro.skyshop.service.StorageService;
 
 import java.util.*;
 
